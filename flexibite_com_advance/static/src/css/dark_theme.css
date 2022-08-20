@@ -1,0 +1,1399 @@
+.floor-map {
+    background: #121212 !important;
+}
+.pos .stock_locations_container .selected_location {
+	background: rgb(225, 189, 189) !important;
+	color: #333;
+}
+div#sale_mode .btn_span_set {
+    color: #333;
+}
+
+.popup.popup-textinput.pos-today-sale li.current:active {
+	background: #16cdcf;
+}
+
+.pos .order-button .order-sequence {
+	color: #ccc;
+}
+
+input:checked+.slider {
+	background-color: #16cdcf;
+}
+
+span.cart-num {
+	color: #ccc;
+}
+
+.pos .clientlist-screen .client-name {
+	color: #ccc;
+}
+
+i#pos-rounding {
+	color: #121212;
+}
+
+.pos .pos-rightheader .header-button:last-child {
+	border-left: none;
+}
+
+select.select_location_type {
+	background: #ccc;
+}
+
+span.searchbox.search_order1 i {
+	color: #ccc;
+}
+
+.pos .order-button.selected .order-sequence {
+	color: #3e3e3e;
+	background: #989898;
+}
+
+.btn_icon_set {
+	color: #ccc;
+	box-shadow: 0 0 3px 0px #2e2833;
+	background: #121212;
+	border: 1px solid #7c736b;
+}
+
+.pos tr.variant-virtual-cart-header {
+	background: #333;
+	color: #fff;
+}
+
+.pos .subwindow .subwindow-container-fix {
+	background: #131313;
+}
+
+.deliver_on {
+	background: #bb84fc !important;
+	color: #fff;
+}
+
+#duration_selection,
+#limit_selection {
+	background: #989898;
+}
+
+.paymentline.extra td.col-due {
+	background: #989898;
+}
+
+.pos .payment-screen .paymentlines-empty .message {
+	text-align: center;
+	color: #ccc;
+}
+
+.pos .product_list_manage .product-name,
+.pos .product_list_manage .product-referance,
+.pos .product_list_manage .product-price-tag {
+	font-weight: normal !important;
+	color: #ccc;
+}
+
+.pos ul.tabs-menu li {
+	background: #ccc;
+}
+
+.pos_tab_session button.active {
+	background: #989898;
+	color: #333;
+}
+
+div#tab-2 table {
+	border: 1px solid #989898;
+}
+
+.pos input#start_date,
+.pos input#end_date {
+	background: transparent;
+	border: 1px solid #7c736b;
+}
+
+.product-details-box .product-detail input,
+.product-details-box .product-detail select {
+	background: transparent;
+	color: #989898;
+}
+
+.pos .productlist-screen.screen .searchbox input,
+.pos .productlist-screen.screen .brand_searchbox input,
+.pos .productlist-screen.screen .category_searchbox input {
+	background-color: #121212 !important;
+}
+
+.product-detail .label {
+	color: #ccc;
+}
+
+.pos .input-fields>input {
+	color: #ccc !important;
+}
+
+.pos .quick-delivery-order-list_css_tablet {
+	background: #333;
+}
+
+.pos .quick-delivery-order-list_css_tablet table tbody tr {
+	color: #fff;
+}
+
+.pos .modal-dialog .popup {
+	background-color: #1f1f1f;
+	z-index: 0;
+	color: #ccc;
+}
+
+.pos input#username:active {
+	color: #ccc;
+}
+
+.panel-container {
+	border-radius: 15px;
+	background: #4a4a4a;
+}
+
+.pos .messages_button ul#draggablePanelList {
+	box-shadow: 0 0 15px 0 #333;
+	background: #3e3e3e;
+}
+
+span.avatar-img.client-image i {
+	font-size: 35px !important;
+	line-height: 43px;
+}
+
+.pos .message-panel-body {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.brand_searchbox i {
+	color: #ccc;
+}
+
+.category_searchbox i {
+	color: #ccc;
+}
+
+tr.variant-cart-line td {
+	color: #ccc;
+}
+
+.c-name {
+	color: #ccc;
+}
+
+.search-clear.left {
+	left: 11px;
+	color: #ccc;
+}
+
+span.v-category.category-simple-button.js-category-switch i {
+	color: #ccc;
+}
+
+.pos .attribute .selected {
+	background-color: #9e9e9e !important;
+}
+
+.pos span#variant-popup-proceed {
+	background: #16cdcf !important;
+}
+
+.pos .attribute .attribute-value .button {
+	background: #121212;
+	border: 1px solid #3e3e3e;
+	color: #ccc;
+}
+
+#sidebar-wrapper1 {
+	background: #121212;
+}
+
+.pos .attribute .attribute-value .variant-quantity {
+	background-color: transparent;
+}
+
+.pos #mysidebar .sidebar-nav li a {
+	color: #ccc !important;
+}
+
+.pos span.print_serial_css {
+	color: #ccc;
+}
+
+.order-note-header {
+	color: #ccc;
+}
+
+.fa.fa-user-plus {
+	color: #989898;
+}
+
+ul.sidebar-nav li.sidebar-brand .user_name {
+	color: #ccc;
+}
+
+ul.sidebar-nav {
+	background: #121212;
+}
+
+ul.sidebar-nav li a {
+	color: #ccc;
+}
+
+li.info {
+	color: #ccc;
+}
+
+h1#variant-title-name {
+	color: #fff;
+}
+
+.pos .order .orderline .info-list {
+	color: #ccc;
+}
+
+.pos .order .orderline .info-list em {
+	color: #ccc;
+}
+
+.pos .order .orderline .info-list {
+	color: #ccc !important;
+}
+
+.pos .orderlist-screen .order_set_width_right .searchbox input,
+.pos .sale-orderlist-screen .sale_order_part2 .searchbox input,
+.pos .invoice-list-screen .invoice_part2 .searchbox input,
+.pos .productlist-screen .stock_list_part2 .searchbox input {
+	width: 142px;
+	padding: 0 0 0 38px;
+	height: 34px !important;
+	background: transparent;
+}
+
+.pos .clientlist-screen .client-detail>.empty {
+	opacity: 0.7;
+	color: #333;
+	color: #989898;
+}
+
+.pos .clientlist-screen .client-details-box {
+	color: #989898;
+}
+
+.button.undo {
+	color: #9e9e9e !important;
+}
+
+.client-image {
+	background: #989898;
+}
+
+.pos .clientlist-screen .client-detail>.label {
+	color: #ccc;
+}
+
+.pos .clientlist-screen .client-details input,
+.pos .clientlist-screen .client-details select {
+	background: #121212;
+	color: #ccc;
+}
+
+.pos .order-button.selected {
+	background: #3e3e3e;
+	color: #ccc;
+}
+
+.pos .product .product-img {
+	background: #121212;
+}
+
+.pos .clientlist-screen .client-list tr:nth-child(even) {
+	background: #121212;
+	color: #ccc;
+}
+
+h1.paymenttotalset {
+	color: #ccc;
+}
+
+.cart-num {
+	color: #fff;
+}
+
+.pos span.input-group-addon i {
+	color: #fff;
+}
+
+.pos .product .product-name {
+	background: #121212;
+	color: #fff;
+}
+
+.pos .out_stock_product_kanban_view .product {
+	color: #ccc;
+}
+
+.pos .order .orderline .price {
+	color: #ccc;
+}
+
+.pos .product {
+	background: #131313;
+}
+
+.pos .order .orderline .product-name {
+	width: 77%;
+	color: #ccc;
+}
+
+button.button.pay {
+	background: #333;
+}
+
+#slidemenubtn1 #menu-toggle1 {
+	color: #121212;
+}
+
+button.button.empty-cart {
+	background: #333;
+}
+
+.paymentmethods .button {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.pos .pos-rightheader>* {
+	border-right: none;
+}
+
+.pos .screen .content-row {
+	background: #121212 none repeat scroll 0 0;
+}
+
+.delivery_order_count {
+	color: #333;
+	background: #16cdcf;
+}
+
+#slidemenubtn1 {
+	color: #121212;
+	background: #cccccc;
+}
+
+
+/* .notification-count {
+
+    background: #16cdcf;
+    color: #121212;
+
+} */
+
+.v-category.category-simple-button.js-category-switch:hover {
+	color: #ffffff !important;
+}
+
+.pos .category-simple-button {
+	background: #3e3e3e !important;
+	color: #f0eeee;
+	border: 1px solid #7c736b;
+}
+
+.summary {
+	border: #2e2833;
+	border-top-color: rgb(46, 40, 51);
+	border-top-style: none;
+	border-top-width: medium;
+	background-color: #ccc;
+	color: #121212;
+	border-top: 1px dashed #7c736d;
+}
+
+.pos .product .product-qty-low {
+	color: #333;
+	background: #16cdcf;
+}
+
+.pos .oe_status i {
+	color: #989898 !important;
+}
+
+.quick_sale_note_line.draft-font {
+	color: #121212;
+}
+
+.pos .popup .button:active {
+	background: #3e3e3e;
+}
+
+.button.paymentmethod:hover {
+	background: #9e9e9e;
+	color: #fff;
+}
+
+.pos .attribute .attribute-name i {
+	color: #333;
+}
+
+.pos #draggablePanelList_delivery_order .panel-heading {
+	color: #333;
+	background: #16cdcf;
+	color: #fff;
+}
+
+.variant-screen .variant-header .product-qty {
+	color: #fff;
+	background: #3e3e3e;
+}
+
+#draggablePanelList .panel-heading .head_data {
+	color: #fff;
+}
+
+.pos .variant .price-tag {
+	color: #fff;
+	background: #3e3e3e;
+}
+
+.pos .attribute .attribute-name {
+	background: #16cdcf !important;
+	color: #fff;
+}
+
+.pos .rightpane .brand_searchbox input,
+.pos .rightpane .category_searchbox input,
+.pos .rightpane .searchbox input {
+	border: 1px solid #7c736b;
+}
+
+
+/* line issue */
+
+.pos .orderlist-screen.screen table.order-list thead,
+.pos .orderlist-screen.screen table.giftcard-list thead,
+.pos .sale-orderlist-screen.screen table thead,
+.pos .invoice-list-screen.screen table thead,
+.pos .giftvoucherlist-screen table thead {
+	background: #3e3e3e !important;
+}
+
+.pos .orderlist-screen .order-list thead>tr,
+.pos .sale-orderlist-screen.screen table thead>tr,
+.pos .invoice-list-screen table thead>tr,
+.pos .orderlist-screen .giftcard-list thead>tr,
+.pos .giftvoucherlist-screen table thead>tr {
+	background: #3e3e3e !important;
+}
+
+
+/* line issue */
+
+.pos .stock_locations_container .change_location {
+	background: #16cdcf !important;
+	color: #fff;
+}
+
+.pos .stock_locations_container .store {
+	background: #959fc5;
+	color: #fff;
+}
+
+.pos .show-left-cart {
+	background: #fff;
+}
+
+.product_line.line-selected {
+	background: #16cdcf !important;
+	color: #fff;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.pos .popup .button {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.product-detail-list {
+	border: 1px solid #dcdcdc;
+	box-shadow: 0 0 3px 0 #333;
+}
+
+.popup .receipt_main_div select {
+	background: #fff;
+}
+
+.pos .popup .stock_tbl select {
+	background: #fff;
+	border: 1px solid #7c736b;
+}
+
+.pos .gift_card table tr td input,
+.pos .gift_card table tr td select {
+	box-shadow: none;
+	border: 1px solid #7c736b;
+	background: #fff;
+}
+
+.popup .in-out-statment table tbody tr input,
+.popup .in-out-statment table tbody select {
+	background: #fff;
+	border: 1px solid #7c736b;
+}
+
+.pos .product-data input {
+	border: 1px solid #7c736b;
+	box-shadow: none;
+	background: transparent;
+}
+
+.pos .popup .in-out-statment .insert-date {
+	box-shadow: none;
+	border: 1px solid;
+}
+
+.bgcolorset tr {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.pos .paymentlines tbody tr td {
+	border-bottom: 1px solid #7c736b;
+	color: #fff;
+}
+
+.pos .tabs-menu-sale li.current_tab a {
+	background-color: #16cdcf;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+
+.pos textarea:focus {
+	box-shadow: none;
+}
+
+.pos #draggablePanelList_sale_note .panel-heading {
+	background-color: #16cdcf;
+	color: #fff;
+}
+
+.pos .sale-orderlist-screen .sale-line,
+.pos .invoice-list-screen .invoice-line {
+	border-bottom: 1px solid #7c736b;
+}
+
+.pos .payment-screen .payment-numpad .quickpay_credit_paymenttable td .button {
+	color: #fff;
+	background: #9e9e9e;
+	border: 1px solid;
+}
+
+.pos .payment-screen .quickpay_credit_paymenttable td .account_pay {
+	background: #7882a6 !important;
+	border: 1px solid;
+	color: #fff;
+}
+
+.pos .quickpay_credit_paymenttable1 tr {
+	color: #959595;
+	border: none;
+}
+
+.pos .paymentmethods .control-button:hover {
+	background: #7882a6;
+}
+
+.ui-widget-header {
+	border: 1px solid #7c736b;
+	background-color: #333;
+	color: #ffffff;
+}
+
+.pos .leftpane #total_pay {
+	border-bottom: none;
+}
+
+.pos .paymentline td {
+	border-bottom: 1px solid;
+}
+
+.pos input:focus,
+.pos input {
+	border: 1px solid;
+}
+
+.pos .pos-rightheader>* {
+	border-right: none;
+}
+
+.control-button.paymentmethod {
+	background: #00cdcf;
+	color: #fff;
+}
+
+.pos .paymentlines thead {
+	background: #16cdcf;
+}
+
+.pos .paymentlines tbody {
+	border-radius: 3px;
+	background: transparent;
+}
+
+.sales-deshboard-graph-screen .user-welcome-message {
+	border-right: 1px solid #fff;
+}
+
+.sales-deshboard-graph-screen .summary-expiry-product {
+	border-right: 1px solid #fff;
+}
+
+.sales-deshboard-graph-screen .summary-active-session {
+	border-right: 1px solid #fff;
+}
+
+.sales-deshboard-graph-screen .summary-active-session {
+	border-right: 1px solid #fff;
+}
+
+.sales-deshboard-graph-screen .Graphical-report-container {
+	border: 1px solid #3e3e3e;
+}
+
+.out-stock-list-product.main-product {
+	border-bottom: 1px solid #3e3e3e;
+}
+
+.pos .product .product-qty {
+	color: #fff;
+	background: #bb85fc;
+}
+
+.product.product_content.select_item {
+	box-shadow: 0 0 11px 0 #333;
+	border-width: 2px;
+}
+
+.pos a,
+.pos .button,
+.pos input,
+.pos select,
+.pos span,
+.pos tr,
+.pos td,
+.pos th {
+	/* color: #333; */
+}
+
+.selected_chart {
+	color: #3b3b3b !important;
+}
+
+.screen .top-content .button.next {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.select_location_type {
+	border: 1px solid #3e3e3e;
+}
+
+.pos .mode-button.selected-mode:hover,
+.sidebar-nav li a:hover,
+.ac_product_list_manage.list .header {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.screen .top-content .date-filter input {
+	border: 1px solid #3e3e3e;
+	background: transparent;
+}
+
+.out-stock-list-product.main-product {
+	border-bottom: 1px solid #3e3e3e;
+	color: #ccc;
+}
+
+#slidemenubtn {
+	background: #f0eeee;
+}
+
+#message_icon {
+	color: #989898 !important;
+}
+
+.pos .popup #lot_list {
+	border: 1px solid #3e3e3e;
+}
+
+.product.out-stock-main-product.highlight {
+	box-shadow: 0 0 3px 2px #16cdcf;
+	border: 1px solid #15cdce;
+}
+
+.pos .logo-container .input::placeholder {
+	color: #ccc;
+}
+
+.input-fields>input::-moz-placeholder,
+.input-fields>input:focus {
+	color: #ccc;
+}
+
+.pos .pos-login-topheader {
+	background-color: #3e3e3e;
+}
+
+.pos .panel-container {
+	box-shadow: 0 0px 5px 0px #333;
+}
+
+.pos .input-fields>input {
+	border: 1px solid #3e3e3e;
+	border-color: #4a4a4a;
+	background: #121212;
+}
+
+.pos-login .action>Button {
+	background-color: #16cdcf;
+	color: #fff;
+}
+
+.pos-login .number_pad_button {
+	background: #4a4a4a none repeat scroll 0 0;
+	color: #fff !important;
+	box-shadow: 0 2px 5px 0 #333;
+}
+
+.pos .order .orderline.selected {
+	background: rgb(50, 50, 50);
+	border-bottom: 1px dashed #ccc;
+}
+
+.pos-login .change_char,
+.change_smallChar,
+.change_num,
+.ac-clear-data {
+	background: #4a4a4a none repeat scroll 0 0 !important;
+	color: #fff !important;
+}
+
+
+/* login screen */
+
+
+/* Home screen */
+
+.pos .pos-topheader {
+	background: #1e1e1e none repeat scroll 0 0;
+	border-bottom: none;
+}
+
+.pos .pos-topheader a {
+	color: #fff;
+}
+
+.pos .leftpane .pads {
+	border-top: none;
+}
+
+.pos .clientlist-screen .client-list tr.highlight {
+	transition: all 150ms linear;
+	background: rgb(22, 205, 207) !important;
+	color: #fff;
+}
+
+.pos .clientlist-screen .client-list tr.lowlight:nth-child(even) {
+	transition: all 150ms linear;
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.pos .clientlist-screen .client-list tr {
+	transition: all 150ms linear;
+	background: none;
+	border-bottom: 1px solid #3e3e3e;
+	color: #ccc;
+}
+
+.screen .top-content .button.back {
+	background: #16cdcf;
+	border: 1px solid #3e3e3e;
+}
+
+.pos .control-button.highlight,
+.pos .button.highlight {
+	background: #16cdcf !important;
+	border: solid 1px #3e3e3e !important;
+	color: white !important;
+}
+
+.pos .pos-topheader span.order-button.lock_button i {
+	color: #333;
+}
+
+.pos .pos-topheader .order-button.square {
+	background: #9e9e9e;
+	color: rgb(0, 0, 0);
+	box-shadow: none;
+}
+
+.pos .order-button {
+	background: #3e3e3e;
+	color: #f0eeee;
+	box-shadow: none;
+}
+
+.pos .pos-topheader .order-button .select-order .selected order-button select-order selected {
+	background: #eeeeef;
+	color: #333;
+}
+
+.pos .pos-topheader i #message_icon {
+	color: #fff;
+}
+
+.pos .pos-cart-info {
+	background: #3e3e3e;
+}
+
+.pos .actionpad .button:hover {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.content-list-ul li:hover {
+	background: #3e3e3e none repeat scroll 0 0;
+	color: #fff;
+}
+
+.pos .screen {
+	background: #121212;
+}
+
+.pos .rightpane-header,
+.pos .leftpane,
+.pos .order-container,
+.pos .order {
+	background: #121212;
+}
+
+.pos .actionpad .button {
+	border-color: #7c736c;
+	color: #fff;
+}
+
+.pos .numpad .input-button,
+.pos .numpad .mode-button {
+	background: #333333;
+	color: #fff;
+}
+
+.pos .actionpad,
+.pos .numpad,
+.pos .numpad button,
+.pos .actionpad .button {
+	border-color: #7c736b;
+	font-weight: normal;
+}
+
+.pos .mode-button.selected-mode {
+	background: #16cdcf;
+	border-color: #7c736c;
+	border-bottom: 1px solid #7c736b;
+	border-right: 1px solid #333;
+}
+
+.pos .product .price-tag {
+	background: #121212;
+}
+
+.pos .product {
+	border: 1px solid #3e3e3e;
+	box-shadow: 0px 0px 2px 1px #333;
+}
+
+#left-sidebar-content {
+	border-right: 1px solid #3e3e3e;
+}
+
+.pos .leftpane {
+	border-right: solid 1px #3e3e3e;
+}
+
+.pos .rightpane .brand_searchbox input,
+.pos .rightpane .category_searchbox input,
+.pos .rightpane .searchbox input {
+	border: 1px solid #3e3e3e;
+	color: #fff;
+}
+
+.pos .leftpane .cart-customer-section {
+	border-bottom: 1px solid #3e3e3e;
+}
+
+.pos .rightpane .brand_searchbox input,
+.pos .rightpane .category_searchbox input,
+.pos .rightpane .searchbox input {
+	/* background: url(/point_of_sale/static/src/css/../img/search.png) no-repeat 15px;
+	background-color: white; */
+	background-color: #333;
+}
+
+.pos .rightpane-header {
+	border-bottom: 1px solid #3e3e3e;
+}
+
+
+/* Home screen */
+
+
+/* Product screen */
+
+
+/* ordrer screen */
+
+.orderlist-screen .order_set_width_right .orderbtn input {
+	border: 1px solid #3e3e3e;
+}
+
+.orderlist-screen .gift_order_set1 .giftorderbtn input {
+	border: 1px solid #3e3e3e;
+}
+
+.giftvoucherlist-screen .voucher_right_width .voucherbtn input {
+	border: 1px solid #3e3e3e;
+}
+
+
+/* ordrer screen */
+
+.main-screen-container .report-header {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.input-textbox {
+	background: #e6e6e6;
+	border: 1px solid #3e3e3e;
+	transition: all 150ms linear 0s;
+}
+
+.pos .popup .title {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.pos .inventory-report-popup .inventory_report_table tr {
+	border-bottom: 1px solid #7c736b;
+	border-top: 1px solid #333;
+}
+
+.sales-deshboard-graph-screen .expired-by-product-title {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.sales-deshboard-graph-screen .warehouse-list thead>tr,
+.sales-deshboard-graph-screen .warehouse-list tr th {
+	background: #16cdcf;
+	color: #333;
+}
+
+.main-screen-container .expired-by-product-title,
+.main-screen-container .warehouse-container-title-bar,
+.main-screen-container .location-container-title-bar {
+	background: #3E3E3E;
+	color: #fff;
+}
+
+.warehouse-list th,
+.location-list th {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.warehouse-wise-product-expire .warehouse-list,
+.location-wise-product-expire .location-list {
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.sidebar-nav li a.item {
+	color: #333;
+}
+
+.pos .clientlist-screen .client-list th,
+.pos .clientlist-screen .client-list tr th {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.screen .top-content {
+	border-bottom: 1px solid #3e3e3e;
+}
+
+.pos .clientlist-screen .client-details input,
+.pos .clientlist-screen .client-details select {
+	border: 1px solid #3e3e3e;
+}
+
+.pos .clientlist-screen .client-details {
+	border-bottom: solid 1px #333;
+}
+
+.pos .payment-buttons .control-button {
+	background: #9e9e9e;
+	color: #fff;
+}
+
+tr.paymentline {
+	background: #3e3e3e;
+}
+
+.payment-screen .paymentlines-empty .total {
+	color: #9e9e9e;
+}
+
+.pos .paymentlines tr th {
+	color: #fff;
+}
+
+.pos .paymentline.selected {
+	font-size: 22px;
+	background: #989898;
+	color: #333;
+}
+
+.pos .paymentlines {
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.pos .paymentline.selected .edit {
+	box-shadow: 0px 0px 0px 2px #3e3e3e;
+	color: #333;
+}
+
+.sidebar-nav li a {
+	text-decoration: none;
+	color: #565656 !important;
+}
+
+.popup .footer .button {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.pos .order-list .bgcolorset th,
+.pos .giftcard-list .bgcolorset1 th,
+.pos .giftvoucher-list .bgcolorset1 th,
+.pos .sale-orderlist-screen .bgcolorset th,
+.pos .invoice-list-screen .bgcolorset th {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.pos #divMenu li {
+	background: #e6e6e6;
+	border: 1px solid #3b3b3b;
+}
+
+.screen .left-content {
+	border-right: 1px solid #3e3e3e;
+}
+
+.pos .payment-numpad .numpad {
+	border-color: #7c736b;
+	border-bottom: 1px solid;
+}
+
+.pos .paymentlines-container {
+	border-bottom: solid 1px #3e3e3e;
+}
+
+.pos .actionpad .button:hover {
+	background: #333333;
+	color: #fff;
+}
+
+.pos .searchbox input:focus {
+	outline: none;
+	box-shadow: 0px 0px 0px 0px #333 inset;
+	color: #989898;
+}
+
+#mysidebar .sidebar-nav {
+	background: #121212;
+}
+
+#mysidebar .sidebar-nav li a {
+	color: #ccc;
+}
+
+span.breadcrumb-button.breadcrumb-home.js-category-switch i {
+	color: #989898;
+}
+
+ul.content-list-ul li {
+	/* background: #fff none repeat scroll 0 0; */
+	color: #ccc;
+}
+
+#mysidebar .sidebar-nav li {
+	border: 1px solid #121212;
+}
+
+#sidebar-wrapper {
+	background: #121212;
+}
+
+#slidemenubtn>a {
+	color: #3e3e3e;
+}
+
+.pos .popup input:focus,
+.pos .popup-input.active {
+	outline: none;
+	box-shadow: none;
+	border: 1px solid #7c736b;
+}
+
+.ac_product_list_manage.list span.product.main-product {
+	border: 1px solid #3e3e3e;
+}
+
+.pos .numpad button:hover {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.screen .top-content .button {
+	border: 1px solid #3e3e3e;
+	background: #989898 none repeat scroll 0 0;
+	border: 1px solid #7c736c;
+	color: #121212;
+}
+
+.pos .clientlist-screen .client-list tr.lowlight {
+	transition: all 150ms linear;
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.pos .searchbox input {
+	border: 1px solid #3e3e3e;
+	background-color: #121212;
+}
+
+.screen .top-content .button.selected {
+	background: #16cdcf;
+	color: #121212;
+}
+
+.pos .actionpad .button.pay .pay-circle {
+	background: #989898;
+	color: #fff;
+}
+
+.pos .actionpad .button:hover .pay-circle {
+	background: #fff;
+	color: rgb(55, 93, 150);
+}
+
+.pos .orderlist-screen .order-list thead>tr,
+.pos .orderlist-screen .order-list tr:nth-child(even) {
+	background: transparent;
+}
+
+.pos .orderlist-screen .order-list tr,
+.pos .orderlist-screen .giftcard-list tr,
+.pos .giftvoucherlist-screen .giftvoucher-list tr {
+	transition: all 150ms linear;
+	background: transparent;
+	border-bottom: 1px solid #3e3e3e;
+	color: #ccc;
+}
+
+.pos .actionpad .button.pay .pay-circle:hover {
+	background: rgb(255, 255, 255);
+	color: #3e3e3e;
+}
+
+.pos .paymentline .col-change.highlight {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.today-report tr.header {
+	background: #333;
+	color: #fff;
+}
+
+.pos .mode-button.selected-mode:hover {
+	background: #3e3e3e;
+	color: white;
+	border-color: #7c736b;
+}
+
+.sales-deshboard-graph-screen .warehouse-list {
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.pos .payment-screen .delivery_table td,
+.pos .payment-screen .delivery_table td input {
+	border: 1px solid #3e3e3e;
+}
+
+.product-details-box .product-detail input,
+.product-details-box .product-detail select {
+	border: 1px solid #3e3e3e;
+}
+
+.pos .popup .footer {
+	border-top: solid 1px #3e3e3e;
+}
+
+#detailed_top_product_data {
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.tabs-menu li.current {
+	background: #16cdcf;
+	color: #fff;
+}
+
+.pos .popup .pos_close_popup {
+	background-color: #3e3e3e;
+}
+
+.pos .popup.lock_popup {
+	background-color: #7982a6;
+}
+
+.close-lock-btn,
+.close-popup-btn {
+	background: #6bc49b;
+	color: #333;
+}
+
+.pos .popup .product-detail-list thead tr {
+	background: #3e3e3e;
+	color: #fff;
+	width: 100%;
+}
+
+#search_category {
+	color: #333;
+	border: 1px solid #7c736b;
+}
+
+.pos .lock-btn span {
+	border: 1px solid #fff;
+}
+
+.pos .popup.lock_popup {
+	border: 10px solid #fff;
+}
+
+.pos .popup.pos_close_popup {
+	background-color: #3e3e3e;
+}
+
+.close-pos-btn span {
+	border: 1px solid #fff;
+}
+
+.pos .selected-menu {
+	background: #00cdcf !important
+}
+
+.sidebar-nav li a:hover {
+	color: #fff !important;
+	background: #3e3e3e;
+}
+
+.pos .graph-screen .selected_chart {
+	background: #3e3e3e !important;
+	color: white !important;
+}
+
+.pos .graph-screen .menu_selected {
+	background: #3e3e3e !important;
+	color: white !important;
+}
+
+#duration_selection,
+#limit_selection {
+	border: 1px solid #7c736b;
+}
+
+#order_note {
+	border: 1px solid #3e3e3e;
+}
+
+#draggablePanelList .panel-heading {
+	background-color: #16cdcf;
+	color: #fff;
+}
+
+button#first {
+	color: #fff !important;
+	background: #3e3e3e !important;
+	border: none;
+}
+
+button#previous {
+	color: #fff !important;
+	background: #3e3e3e !important;
+	border: none;
+}
+
+button#next {
+	color: #fff !important;
+	background: #3e3e3e !important;
+	border: none;
+}
+
+button#last {
+	color: #fff !important;
+	background: #3e3e3e !important;
+	border: none;
+}
+
+.pos .out_stock_header {
+	background: #3e3e3e;
+	color: #fff;
+}
+
+.pos_tab_session button.active {
+	background: #4c4c4c;
+	color: #ccc;
+}
+
+
+/* ::placeholder {
+	color: #ccc;
+}
+
+ ::placeholder i {
+	color: #ccc;
+} */
+
+.input::placeholder {
+	color: #ccc;
+}
+
+.textarea::placeholder {
+	color: #ccc;
+}
+
+span.receipt_content_css {
+	color: #ccc;
+}
+
+tr#update_email_tr {
+	color: #ccc;
+}

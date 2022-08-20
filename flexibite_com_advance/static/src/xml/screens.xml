@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<t t-name="DeliveryDetailsScreenWidget">
+        <div class="delivery-details-screen screen">
+            <div class="screen-content">
+                <section class="top-content">
+                    <span class='button back'>
+                        <i class='fa fa-angle-double-left'></i>
+                        Back
+                    </span>
+                    <span class='button reload_delivery_orders' style="left: 130px;line-height: 30px;">
+                        <i class="fa fa-refresh reload_order" aria-hidden="true"></i>
+                        Reload
+                    </span>
+                </section>
+                <section class="full-content">
+                    <div class='window'>
+                        <section class='subwindow'>
+                            <div class='subwindow-container'>
+                                <div class='subwindow-container-fix touch-scrollable scrollable-y'>
+                                    <div>
+                                        <table class='order-list' style="display:none;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Order Ref</th>
+                                                    <th>Receipt Ref</th>
+                                                    <th>Customer</th>
+                                                    <th>Order Date</th>
+                                                    <th>Delivery Date</th>
+                                                    <th>Delivery Time</th>
+                                                    <th>Delivery Address</th>
+                                                    <th>Total</th>
+                                                    <th/>
+                                                </tr>
+                                            </thead>
+                                            <tbody class='order-list-contents'>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div class="kanban-delivery-orders"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="DeliveryOrderViews">
+        <div t-att-data-order-id="order.id" class="delivery_order_container">
+            <div>
+	            <div class="delivery_header">
+	                <div class="order_name">
+	                    <t t-esc="order.pos_reference"/>
+	                </div>
+                    <div class="order_state">
+	                   <t t-if="order.state != 'draft'">
+	                       <span> Paid </span>
+	                   </t>
+                        <t t-else="">
+	                       <div class="blinking"> Unpaid </div>
+	                   </t>
+	                </div>
+	            </div>
+                <div class="delivery_body">
+	                <div>
+	                    <table>
+	                        <tr>
+	                            <td style="border-right: 1px solid #555;width: 30%;">
+	                                Customer
+	                            </td>
+                                <td>
+	                                <t t-esc="order.partner_id[1] or 'None'"/>
+	                            </td>
+	                        </tr>
+                            <tr>
+                                <td style="border-right: 1px solid #555;">
+                                    Date
+                                </td>
+                                <td>
+                                    <t t-esc="order.delivery_date or '-'"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-right: 1px solid #555;">
+                                    Time
+                                </td>
+                                <td>
+                                    <t t-esc="order.delivery_time or '-'"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-right: 1px solid #555;">
+                                    Address
+                                </td>
+                                <td>
+                                    <div class="delivery_address">
+                                        <t t-esc="order.delivery_address or '-'"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-right: 1px solid #555;">
+                                    Amount
+                                </td>
+                                <td>
+                                    <t t-esc="widget.format_currency(order.amount_total) or ''"/>
+                                </td>
+                            </tr>
+	                    </table>
+	                </div>
+	            </div>
+                <div class="delivery_footer">
+                    <div id="change_deliver_state"
+                         t-att-data-id='order.id'
+                         t-att-data-delivery-state="order.delivery_type"
+                         t-att-data-order-state="order.state"
+                         style="cursor:pointer">
+                        <t t-if="order.delivery_type == 'pending'">
+                            Delivered
+                        </t>
+	                </div>
+                    <div id="change_delivery_user"
+                         title="Change Delivery User"
+                         t-att-data-id='order.id'
+                         t-att-data-delivery-user-id="order.delivery_user_id[0]">
+	                    <i class="fa fa-user" aria-hidden="true"></i>
+                        <t t-esc="order.delivery_user_id[1]"/>
+	                </div>
+	            </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="SelectVariantScreen">
+         <div class="variant-screen screen">
+            <div class="screen-content">
+                <section class="top-content">
+                    <span id="variant-popup-cancel" class="button back">
+                        <i class='fa fa-angle-double-left'></i>
+                        Cancel
+                    </span>
+                    <div id="search_variant" class="searchbox"
+                         style="width:40% !important; right: 70px !important;margin: 10px;position:fixed;float:left;">
+                        <input id="search_variant_input" placeholder="Search Products"
+                               style="width:100%;border-radius:20px;"/>
+                        <span class="search-clear left" style="left: 20px; color: #808080; top: 12px;">
+                            <i class="fa fa-search"/>
+                        </span>
+                        <span class="search-clear right" style="left: 523px; color: #808080;cursor: pointer;top: 12px;">
+                            <i class="fa fa-remove"/>
+                        </span>
+                    </div>                   
+                </section>
+                <section class="full-content">
+                     <div class='window'>
+                        <section class='subwindow'>
+                            <div class='subwindow-container'>
+                                <div style="display: inline-flex; margin: :10px; line-height: 2; padding: 10px; flex-direction: row;">
+                                    <h1 id="variant-title-name"></h1>
+                                    <span id="variant-popup-proceed" class="button proceed"
+                                          style="position: absolute;background: #50b6a0; right:0; line-height: 30px; margin: 10px; height:33px; font-size: 16px; padding: 0px 26px;">
+                                        Proceed
+                                        <i class='fa fa-angle-double-right'></i>
+                                    </span>
+                                </div>
+                                <div class="varient-attribute-container">
+                                    <div class="content-container container-attribute-list"
+                                         style="width: 45%;float: left;">
+                                        <span class="placeholder-AttributeListWidget"/>
+                                    </div>
+                                    <div class="content-container container-variant-list"
+                                         style="width: 49%;float: left;border-left: dashed 1px rgb(215,215,215);padding: 10px;">
+                                        <div class="variant-modifiers"/>
+                                        <span class="placeholder-VariantListWidget"/>
+                                    </div>
+                                    </div>
+                                <div class="variant-virtual-cart-container">
+                                    <div class="variant-virtual-cart">
+                                        <table class='variant-virtual-cart-table' style="width: 75%;font-size: 14px;">
+                                            <!--<colgroup>
+                                                 <col width="20%" />
+                                                 <col width="60%" />
+                                                 <col width="20%" />
+&lt;!&ndash;                                                 <col width="35%" />&ndash;&gt;
+                                                 <col width="10%" />
+                                             </colgroup>-->
+                                            <tr class="variant-virtual-cart-header" style="height: 40px;">
+                                                 <th style="text-align: center; width:20%;">Image</th>
+                                                <th style="text-align: center; width:50%;">Name</th>
+                                                <th style="text-align: center; width:20%;">Quantity</th>
+                                                <!--                                                 <th style="text-align: center;">Modifiers</th>-->
+                                                <th style="text-align: center; width:10%;"/>
+                                             </tr>
+                                            <tbody class='modifiers-list-contents'>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="AttributeListWidget">
+        <div class='attribute-list-container'>
+            <div class="attribute-list-scroller touch-scrollable">
+                <div class="attribute-list">
+                </div>
+            </div>
+            <span class="placeholder-ScrollbarWidget"/>
+        </div>
+    </t>
+
+    <t t-name="AttributeWidget">
+        <span class='attribute' t-att-data-attribute-id="attribute.id">
+            <div class="attribute-name button selected" t-att-data-attribute-id="attribute.id">
+                <i class="fa fa-minus" aria-hidden="true" style="font-size: 14px;font-weight: normal;color: #5C5C5C;"/>
+                <t t-esc="attribute.name"/>
+            </div>
+            <div class='value-list-container'>
+                <div class="value-list">
+                </div>
+            </div>
+        </span>
+    </t>
+
+    <t t-name="AttributeValueWidget">
+        <span class='attribute-value' t-att-data-attribute-id="value.attribute_id[0]"
+              t-att-data-attribute-value-id="value.id">
+            <div class="button">
+                <div class="attribute-value-header">
+                    <span class="variant-quantity">
+                        <t t-esc="variant_qty"/>
+                        Variants
+                    </span>
+                </div>
+                <div class="attribute-value-name">
+                    <t t-esc="value.name"/>
+                </div>
+            </div>
+        </span>
+    </t>
+
+    <t t-name="VariantListWidget">
+        <div class='variant-list-container'>
+            <div class="variant-list-scroller touch-scrollable">
+                <div class="variant-list">
+                </div>
+            </div>
+            <span class="placeholder-ScrollbarWidget"/>
+        </div>
+    </t>
+
+    <t t-name="VariantWidget">
+        <span class='variant' t-att-data-variant-id="variant.id">
+            <div class="variant-header">
+                <img t-att-src='image_url'/>
+                <t t-if="!variant.to_weight">
+                    <span class="price-tag">
+                        <t t-esc="widget.format_currency(variant.get_price(pricelist, 1),'Product Price')"/>
+                    </span>
+                </t>
+                <t t-if="variant.to_weight">
+                    <t t-if="variant.qty_available &gt; 0">
+                        <span class="variant-qty">
+                            <t t-esc="variant.qty_available + ' Kgs'"/>
+                        </span>
+                    </t>
+                    <t t-if="variant.qty_available &lt;= 0">
+                        <span class="variant-qty-low">
+                            <t t-esc="variant.qty_available + ' Kgs'"/>
+                        </span>
+                    </t>
+                </t>
+                <t t-if="!variant.to_weight">
+                    <t t-if="variant.qty_available &gt; 0">
+                        <span class="variant-qty">
+                            <t t-esc="variant.qty_available"/>
+                        </span>
+                    </t>
+                    <t t-if="variant.qty_available &lt;= 0">
+                        <span class="variant-qty-low">
+                            <t t-esc="variant.qty_available"/>
+                        </span>
+                    </t>
+                </t>
+                <t t-if="variant.to_weight">
+                    <span class="price-tag">
+                        <t t-esc="widget.format_currency(variant.get_price(pricelist, 1),'Product Price')+'/'+widget.pos.units_by_id[variant.uom_id[0]].name"/>
+                    </span>
+                </t>
+            </div>
+            <div class="variant-name">
+                <t t-esc="variant.display_name"/>
+            </div>
+        </span>
+    </t>
+
+    <t t-name="VariantVirtualCartLines">
+        <t t-if="variant_info">
+            <t t-foreach="variant_info" t-as="variant_line">
+                <t t-if="variant_line.id">
+                    <tr t-att-class="variant_line.is_selected ? 'variant-cart-line selected-variant-cart-line' : 'variant-cart-line'"
+                        t-att-data-variant-id="variant_line.id">
+                        <td style="text-align: center;">
+                            <img t-att-src='variant_line.image' style="max-height: 40px;"/>
+                        </td>
+                        <td style="text-align: center;"><t t-esc="variant_line.display_name"/></td>
+                        <td style="text-align: center;display: inline-block;float: left;margin-top: 5px;width: 115px;">
+                            <div class="input-group oe_website_spinner return_product" style="margin: auto">
+                                <span class="input-group-addon" style="float: left;width: 23px;margin-top: 7px;">
+                                    <a t-attf-href="#" t-att-data-variant-id="variant_line.id"
+                                       class="mb8 js_variant_qty">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                </span>
+                                <input class="variant-quantity"
+                                       type="number"
+                                       t-att-value="variant_line.qty"
+                                       style="height: 25px;width: 50px;font-size: 14px;float: left;text-align: center;"
+                                       t-att-data-variant-id="variant_line.id"/>
+                                <span class="input-group-addon" style="float: left;width: 25px;margin-top: 7px;">
+                                    <a t-attf-href="#" t-att-data-variant-id="variant_line.id"
+                                       class="mb8 float_left js_variant_qty">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </td>
+                        <td style="cursor:pointer;width:10%;" t-att-data-variant-id="variant_line.id"
+                            class="delete-variant">
+                            <i class="fa fa-trash" aria-hidden="true" style="font-size: 18px; width:100%;"/>
+                        </td>
+                    </tr>
+                </t>
+            </t>
+        </t>
+    </t>
+
+</templates>

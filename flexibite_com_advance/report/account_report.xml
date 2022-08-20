@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- QWeb Reports -->
+
+        <report
+                id="report_tax"
+                model="tax.report.wiz"
+                string="Tax Report"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.tax_report_template"
+                file="flexibite_com_advance.tax_report_template"
+        />
+
+        <report
+                id="report_trial_balance"
+                model="trial.balance.wiz"
+                string="Trial Balance"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.trial_balance_template"
+                file="flexibite_com_advance.trial_balance_template"
+        />
+
+        <report
+                id="report_aged_payble"
+                model="aged.payable"
+                string="Aged Payble"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.aged_payble_template"
+                file="flexibite_com_advance.aged_payble_template"
+        />
+
+        <report
+                id="report_aged_receivable"
+                model="aged.receivable"
+                string="Aged Receivable"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.aged_receivable_template"
+                file="flexibite_com_advance.aged_receivable_template"
+        />
+
+        <report
+                id="report_partner_ledger"
+                model="account.report.partner.ledger"
+                string="Partner Ledger"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.partner_ledger_template"
+                file="flexibite_com_advance.partner_ledger_template"
+        />
+
+        <report
+                id="action_report_financial"
+                model="account.financial.report"
+                string="Financial report"
+                menu="False"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.report_financial"
+                file="flexibite_com_advance.report_financial"
+        />
+
+        <report
+                id="report_general_ledger"
+                model="account.general.ledger.wiz"
+                string="General Ledger"
+                report_type="qweb-pdf"
+                name="flexibite_com_advance.general_ledger_template"
+                file="flexibite_com_advance.general_ledger_template"
+        />
+
+
+    </data>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="front_inventory_session_thermal_report_template">
+            <div class="pos-receipt">
+                <t t-foreach="docs" t-as="receipt">
+                    <div align="center">
+                        <div>
+                            <div>Inventory Audit Report</div>
+                            ====================================
+                            <br/>
+                        </div>
+                    </div>
+                    <div>
+                        Point of Sale
+                        <span class="pos-receipt-right-align">
+                            <t t-esc="receipt.get_pos_name()"/>
+                        </span>
+                    </div>
+                    <div>
+                        Report Date
+                        <span class="pos-receipt-right-align">
+                            <t t-esc="receipt.get_current_date_x()"/>
+                        </span>
+                    </div>
+                    <div>
+                        Report Time
+                        <span class="pos-receipt-right-align">
+                            <t t-esc="receipt.get_current_time_x()"/>
+                        </span>
+                    </div>
+                    =================================
+                    <t t-if="receipt.get_inventory_details()">
+                        <table>
+                            <colgroup>
+                                <col width='50%'/>
+                                <col width='25%'/>
+                                <col width='25%'/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Sold Qty.</th>
+                                    <th>Available Qty.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach='receipt.get_inventory_details()' t-as='inv_detail'>
+                                    <td>
+                                        <t t-esc='inv_detail.get("product_id")[1]'/>
+                                    </td>
+                                    <td align="right">
+                                        <t t-esc='inv_detail.get("used_qty")'/>
+                                        <t t-esc='inv_detail.get("uom_name")'/>
+                                    </td>
+                                    <td align="right">
+                                        <t t-esc='inv_detail.get("quantity")'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </t>
+
+                    <t t-if="not receipt.get_inventory_details()">
+                        <br/>
+                        <div size='double-height'>
+                            <div>Records Not Found.</div>
+                        </div>
+                    </t>
+                    <br/>
+                    ---------------- End of Report -----------------
+                </t>
+            </div>
+        </template>
+
+    </data>
+</odoo>

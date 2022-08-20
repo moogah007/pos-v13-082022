@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="aspl_sale_note_res_users_form_view_ace" model="ir.ui.view">
+            <field name="name">res.users.form.view</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet//notebook//page[@name='access_rights']" position="inside">
+                    <group col="2">
+                        <field name="store_ids" widget="many2many_tags" context="{'company_ids':company_ids}"
+                               options="{'no_create':True}"/>
+                        <field name="default_store_id" options="{'no_create':True}" context="{'store_ids':store_ids}"/>
+                    </group>
+                </xpath>
+
+                <xpath expr="//div[hasclass('oe_title')]/group/field[@name='partner_id']" position="after">
+                    <field name="rfid_no"/>
+                </xpath>
+
+                <xpath expr="//page[2]" position='after'>
+                    <page string='Point of Sale'>
+                        <group colspan="2">
+                            <group>
+                                <field name="pos_security_pin" password="True"/>
+                            </group>
+                        </group>
+
+                        <!--<group colspan="2" attrs="{'invisible': [('pos_user_type', '=', 'delivery_user')]}">
+                            <group>
+                                <field name="login_with_pos_screen"
+                                       attrs="{'invisible' : [('pos_user_type', '!=', False)]}"/>
+                                &lt;!&ndash; <field name="login_with_pos_screen"/>&ndash;&gt;
+                                <field name="default_pos"
+                                       attrs="{'invisible': [('login_with_pos_screen', '=', False)],
+                                                'required': [('login_with_pos_screen', '=', True)]}"/>
+
+                            </group>
+                        </group>-->
+
+                        <group string="Flexibite" col="4">
+                            <!--                            <field name="access_pos_dashboard"/>-->
+                            <!-- <field name="access_product_expiry_report"/>
+                            <field name="display_own_sales_order"/> -->
+                            <field name="access_ereceipt"/>
+                            <field name="access_quick_cash_payment"/>
+                            <field name="access_order_note"/>
+                            <!-- <field name="access_product_note"/> -->
+                            <field name="access_pos_return"/>
+                            <field name="access_reorder"/>
+                            <field name="access_draft_order"/>
+                            <!-- <field name="access_rounding"/> -->
+                            <field name="access_bag_charges"/>
+                            <field name="access_delivery_charges"/>
+                            <field name="access_pos_lock"/>
+                            <field name="access_keyboard_shortcut"/>
+                            <field name="access_product_sync"/>
+                            <field name="access_display_warehouse_qty"/>
+                            <field name="access_change_stock_locations"/>
+                            <field name="access_pos_graph"/>
+                            <field name="access_x_report"/>
+                            <field name="access_pos_loyalty"/>
+                            <field name="access_today_sale_report"/>
+                            <field name="access_money_in_out"/>
+                            <field name="access_print_cash_statement"/>
+                            <field name="access_gift_card"/>
+                            <field name="access_gift_voucher"/>
+                            <field name="access_print_last_receipt"/>
+                            <field name="access_pos_promotion"/>
+                            <field name="lock_terminal"/>
+                            <field name="delete_msg_log"/>
+                            <field name="access_show_qty"/>
+                            <field name="access_print_valid_days"/>
+                            <field name="access_card_charges"/>
+                            <field name="access_wallet"/>
+                            <field name="access_default_customer"/>
+                            <!-- <field name="access_print_ledger"/> -->
+                            <field name="access_create_purchase_order"/>
+                            <field name="discard_product"/>
+                            <field name="access_send_order_kitchen"/>
+                            <field name="access_combo"/>
+                            <field name="can_give_discount"/>
+                            <!-- <field name="can_change_price"/> -->
+                            <field name="discount_limit"/>
+                            <field name="based_on"/>
+                            <field name="change_sales_person"/>
+                        </group>
+                        <group string="Order Sync">
+                            <field name="pos_user_type"/>
+                            <field name="default_pos"
+                                   context="{'from_users': True, 'res_user': id, 'store_ids':store_ids}"
+                                   force_save="1" options="{'no_create': True}"
+                                   attrs="{'invisible': [('pos_user_type', '!=', 'cook')],
+                                    'required': [('pos_user_type', '=', 'cook')]}"/>
+                            <field name="cook_user_ids" widget="many2many_tags"
+                                   domain="[('pos_user_type', '=', 'cook')]" options="{'no_create': True}"
+                                   attrs="{'invisible': [('pos_user_type', '!=', 'cashier'),
+                                                  ('pos_user_type', '!=', 'delivery_user')]}"/>
+                            <field name="pos_category_ids" widget="many2many_tags"
+                                   attrs="{'invisible' : ['|','|',('pos_user_type', '=', False),
+                                                   ('pos_user_type', '=', 'cashier'),
+                                                   ('pos_user_type', '=', 'delivery_user')],
+                                    'required' : [('pos_user_type', '=', 'cook')]}"/>
+                            <!--<field name="sales_persons" attrs="{'invisible': ['|',('pos_user_type', '=', 'salesman'),
+                    	('pos_user_type', '=', 'delivery_user')]}"
+                                   widget="many2many_tags" context="{'from_sales_person': True}"/>-->
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
